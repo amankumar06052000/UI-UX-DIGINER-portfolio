@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Basic -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Aman UI Studio | Web Design & Development Services in India</title>
+    <meta name="description"
+        content="Aman UI Studio provides modern, responsive and professional website design services in India." />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://amankumar06052000.github.io/Aman-UI-Studio/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aman UI Studio | Web Design & Development Services in India">
+    <meta property="og:description" content="Modern, responsive and professional website design services in India.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amankumar06052000.github.io/Aman-UI-Studio/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+<!-- Tailwind CSS via CDN (script method) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<!-- Preload Font Awesome -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</noscript>
+
+
+</head>
+
+
+<body class="bg-[#0b6b5f] dark:bg-gray-900 text-white scroll-smooth overflow-x-hidden">
+
+
+
+    <!-- HEADER -->
+    <header class="w-full py-6 bg-[#0b6b5f] dark:bg-gray-900 overflow-x-hidden">
+
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+
+            <!-- LOGO -->
+            <div class="flex items-center gap-3">
+                <img src="Logo.webp" alt="Logo"  width="40" height="40" class="w-10 h-10 rounded-md object-contain bg-white p-1">
+                <span class="text-2xl font-bold text-white">AMAN</span>
+            </div>
+
+            <!-- DESKTOP MENU -->
+            <nav class="hidden lg:flex gap-8 font-medium text-white items-center">
+
+                <a href="index.html" class="hover:text-yellow-400">Home</a>
+                <a href="#skills" class="hover:text-yellow-400">Skills</a>
+                <a href="services.html" class="hover:text-yellow-400">Services</a>
+                <a href="About.html" class="hover:text-yellow-400">About</a>
+                <a href="#contact" class="hover:text-yellow-400">Contact</a>
+
+                <!-- DESKTOP SOCIAL & DARK MODE -->
+                <div class="flex items-center gap-4 ml-6 text-xl">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        title="Visit my LinkedIn profile"
+                        class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        title="Visit my Facebook profile"
+                        class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="https://wa.me/918894435516" target="_blank" rel="noopener noreferrer"
+                        title="Chat with me on WhatsApp"
+                        class="text-white-500 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <button onclick="toggleDarkMode()"
+                        class="ml-2 px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded">🌙</button>
+                </div>
+            </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button id="menuBtn" class="lg:hidden text-white text-3xl ">
+
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden w-full overflow-hidden bg-[#0b6b5f] dark:bg-gray-900 px-4 py-4 space-y-2">
+            <a href="index.html" class="block py-2 px-3 rounded hover:text-yellow-400">Home</a>
+            <a href="#skills" class="block py-2 px-3 rounded hover:text-yellow-400">Skills</a>
+            <a href="services.html" class="block py-2 px-3 rounded hover:text-yellow-400">Services</a>
+            <a href="About.html" class="block py-2 px-3 rounded hover:text-yellow-400">About</a>
+            <a href="#contact" class="block py-2 px-3 rounded hover:text-yellow-400">Contact</a>
+
+            <div class="flex justify-center gap-4 mt-4 text-xl text-white">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                    title="Visit my LinkedIn profile" class="text-white text-xl hover:scale-110 transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                    title="Visit my Facebook profile" class="text-white text-xl hover:scale-110 transition">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://wa.me/918894435516" target="_blank" rel="noopener noreferrer"
+                    title="Chat with me on WhatsApp" class="text-white text-xl hover:scale-110 transition">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <button onclick="toggleDarkMode()"
+                class="mt-4 w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded text-center">
+                🌙 Dark Mode
+            </button>
+        </div>
+    </header>
+
+
+
+
+
+<main>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="min-h-screen flex items-center
+bg-gradient-to-br from-[#0b6b5f] via-[#0f766e] to-[#115e59]
+dark:from-gray-900 dark:via-gray-800 dark:to-gray-950 pb-20">
+
+        <div class="max-w-7xl mx-auto px-6 w-full
+    flex flex-col lg:flex-row items-center justify-between gap-12">
+
+            <!-- IMAGE + BUTTON -->
+            <div class="w-full lg:w-1/2 flex flex-col items-center">
+
+                <div class="relative bg-yellow-400 rounded-[200px] 
+            w-[260px] sm:w-[300px] 
+            h-[380px] sm:h-[420px]
+            overflow-hidden shadow-2xl">
+
+                    <img src="Amankumar.profile.webp" alt="Profile" width="300" height="420" fetchpriority="high"
+     decoding="async" class="absolute bottom-0 left-1/2 -translate-x-1/2 
+                    w-full object-contain" />
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex gap-4 justify-center mt-6 flex-wrap">
+                    <a href="Aman Kumar CV Resume.pdf" download class="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold
+                    hover:bg-white hover:text-[#0b6b5f] hover:shadow-[0_30px_70px_rgba(11,107,95,0.4)] 
+                    hover:-translate-y-3 transition duration-300 ease-in-out">
+                        Download CV
+                    </a>
+
+                    <a href="#contact" class="border border-white px-6 py-3 rounded-full font-semibold
+                    hover:bg-white hover:text-[#0b6b5f] 
+                    hover:shadow-[0_30px_70px_rgba(11,107,95,0.4)] 
+                    hover:-translate-y-3 transition duration-300 ease-in-out">
+                        Hire Me
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="w-full lg:w-1/2 flex flex-col 
+        text-center lg:text-right space-y-10">
+
+                <div>
+                    <p class="text-gray-200 uppercase tracking-widest text-sm">
+                        Creative Expertise
+                    </p>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+                        Turning Ideas Into
+                        <br> Stunning Digital
+                    </h2>
+                </div>
+
+                <div>
+                    <p class="text-gray-200 uppercase tracking-widest text-sm">
+                        Technical Strength
+                    </p>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                        Modern Frontend Development
+                    </h2>
+                </div>
+
+                <div>
+                    <p class="text-gray-200 uppercase tracking-widest text-sm">
+                        Design Philosophy
+                    </p>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                        Clean UI • Smooth UX • Responsive Layouts
+                    </h2>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section
+        class="min-h-screen flex flex-col items-center justify-center text-center px-6 py-16 bg-white dark:bg-gray-950">
+
+        <!-- Heading -->
+        <h1 class="text-5xl sm:text-6xl font-extrabold 
+    text-[#0b6b5f] dark:text-yellow-400 mb-6 tracking-tight">
+            My Expertise
+        </h1>
+
+        <!-- Description -->
+        <p class="text-gray-600 dark:text-gray-300 
+    text-lg sm:text-xl max-w-2xl leading-relaxed">
+            I specialize in crafting modern, responsive and user-focused websites
+            using clean code and thoughtful design principles.
+        </p>
+
+        <!-- Skill Highlights -->
+        <div class="mt-12 flex flex-wrap justify-center gap-6">
+
+            <span class="px-6 py-3 bg-[#0b6b5f]/10 
+        text-[#0b6b5f] dark:bg-yellow-400/10 dark:text-yellow-400 
+        rounded-full font-semibold">
+                HTML5
+            </span>
+
+            <span class="px-6 py-3 bg-[#0b6b5f]/10 
+        text-[#0b6b5f] dark:bg-yellow-400/10 dark:text-yellow-400 
+        rounded-full font-semibold">
+                CSS3
+            </span>
+
+            <span class="px-6 py-3 bg-[#0b6b5f]/10 
+        text-[#0b6b5f] dark:bg-yellow-400/10 dark:text-yellow-400 
+        rounded-full font-semibold">
+                Tailwind CSS
+            </span>
+
+            <span class="px-6 py-3 bg-[#0b6b5f]/10 
+        text-[#0b6b5f] dark:bg-yellow-400/10 dark:text-yellow-400 
+        rounded-full font-semibold">
+                JavaScript
+            </span>
+
+            <span class="px-6 py-3 bg-[#0b6b5f]/10 
+        text-[#0b6b5f] dark:bg-yellow-400/10 dark:text-yellow-400 
+        rounded-full font-semibold">
+                UI / UX Design
+            </span>
+
+        </div>
+
+        <!-- Back Button -->
+        <div class="mt-12">
+            <a href="index.html" class="inline-block px-6 py-3 rounded-full border-2 
+        border-[#0b6b5f] dark:border-yellow-400 
+        text-[#0b6b5f] dark:text-yellow-400 
+        font-semibold hover:bg-[#0b6b5f] hover:text-white 
+        dark:hover:bg-yellow-400 dark:hover:text-gray-900 
+        transition duration-300">
+                ← Back to Home
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ======= SKILLS GRID ======= -->
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <!-- HTML -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+        hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+        hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="Html5.webp" alt="HTML5 Logo" width="56" height="56" loading="lazy" decoding="async"
+                    class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    HTML5
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Semantic structure, accessibility & clean markup expertise.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 90%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    90%
+                </p>
+            </div>
+
+            <!-- CSS -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+        hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+        hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="css3.webp" alt="CSS3 Logo" width="56" height="56" loading="lazy" decoding="async"
+                    class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    CSS3
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Responsive layouts, animations & modern styling techniques.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 85%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    85%
+                </p>
+            </div>
+
+            <!-- Tailwind -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+        hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+        hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo" width="56" height="56" loading="lazy"
+                    decoding="async" class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    Tailwind CSS
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Utility-first framework for fast & scalable UI development.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 80%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    80%
+                </p>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+        hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+        hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="js.webp" alt="JavaScript Logo" width="56" height="56" loading="lazy" decoding="async"
+                    class="w-14 h-14 mx-auto mb-4" />
+
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    JavaScript
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Interactive functionality, DOM manipulation & logic building.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 70%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    70%
+                </p>
+            </div>
+
+            <!-- UI/UX -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+        hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+        hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="UI.logo.webp" alt="UI.12 Logo" width="56" height="56" loading="lazy" decoding="async"
+                    class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    UI / UX Design
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    User-focused interfaces with clean & intuitive experiences.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 75%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    75%
+                </p>
+            </div>
+
+            <!-- Figma -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+        hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+        hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="FIGMA.webp" alt="FIGMA Logo" width="56" height="56" loading="lazy" decoding="async"
+                    class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    Figma
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Wireframing, prototyping & modern interface design systems.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 80%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    80%
+                </p>
+            </div>
+
+            <!-- Photoshop -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+        hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+        hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="Photoshop.webp" alt="Photoshop Logo" width="56" height="56" loading="lazy" decoding="async"
+                    class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    Photoshop
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Creative graphics, image editing & visual enhancements.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 75%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    75%
+                </p>
+            </div>
+
+            <!-- React -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+        hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+        hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="React.webp" alt="React Logo" width="56" height="56" loading="lazy" decoding="async"
+                    class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    React (Basic)
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Component-based UI development & modern frontend concepts.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 65%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    65%
+                </p>
+            </div>
+            <!-- WordPress -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="woldprees (1).webp" alt="Woldprees Logo" width="56" height="56" loading="lazy"
+                    decoding="async" class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    WordPress
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Custom themes, plugin integration & dynamic website management.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 75%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    75%
+                </p>
+
+            </div>
+
+
+            <!-- jQuery -->
+            <div class="group border bg-white dark:bg-gray-800 rounded-3xl p-8 text-center
+hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]
+hover:-translate-y-3 transition duration-300 ease-in-out">
+                <img src="jQuery.webp" alt="jquery Logo" width="56" height="56" loading="lazy" decoding="async"
+                    class="w-14 h-14 mx-auto mb-4" />
+
+
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                    jQuery
+                </h3>
+
+                <p class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-100 mt-2">
+                    Simplified DOM manipulation, animations & interactive effects.
+                </p>
+
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-6">
+                    <div class="bg-[#0b6b5f] group-hover:bg-white h-2 rounded-full transition-all duration-500"
+                        style="width: 70%"></div>
+                </div>
+
+                <p class="mt-2 text-sm font-semibold text-gray-500 dark:text-gray-300 group-hover:text-white">
+                    70%
+                </p>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="scroll-mt-24 py-20 bg-gray-200 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-[#0b6b5f] text-center dark:text-yellow-400 mb-14"> Contact Us </h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col md:flex-row gap-10">
+                <!-- Left Side -->
+                <div class="md:w-1/2 space-y-4">
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📍 Himachal
+                        Pradesh & (Chandigarh), India </div>
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📞 +91
+                        8894435516 </div>
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📧
+                        amankumar06052000@gmail.com </div>
+                </div> <!-- Right Side -->
+                <div class="md:w-1/2">
+                    <form id="contactForm" class="space-y-4"> <input type="text" required
+                            class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
+                            placeholder="Your Name"> <input type="email" required
+                            class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
+                            placeholder="Your Email"> <textarea rows="4" required
+                            class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
+                            placeholder="Your Message"></textarea> <button type="submit"
+                            class="bg-[#0b6b5f] text-white px-6 py-3 rounded-full font-semibold hover:shadow-[0_15px_40px_rgba(11,107,95,0.4)] hover:-translate-y-1 transition duration-300">
+                            Send Message </button>
+                        <p id="successMsg" class="hidden text-green-600 dark:text-green-400 font-semibold mt-2"> ✅
+                            Message sent successfully! </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="scroll-mt-24 py-20 bg-gray-200 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-[#0b6b5f] text-center dark:text-yellow-400 mb-14"> Contact Us </h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col md:flex-row gap-10">
+                <!-- Left Side -->
+                <div class="md:w-1/2 space-y-4">
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📍 Himachal
+                        Pradesh & (Chandigarh), India </div>
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📞 +91
+                        8894435516 </div>
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📧
+                        amankumar06052000@gmail.com </div>
+                </div> <!-- Right Side -->
+                <div class="md:w-1/2">
+                    <form id="contactForm" class="space-y-4"> <input type="text" required
+                            class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
+                            placeholder="Your Name"> <input type="email" required
+                            class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
+                            placeholder="Your Email"> <textarea rows="4" required
+                            class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
+                            placeholder="Your Message"></textarea> <button type="submit"
+                            class="bg-[#0b6b5f] text-white px-6 py-3 rounded-full font-semibold hover:shadow-[0_15px_40px_rgba(11,107,95,0.4)] hover:-translate-y-1 transition duration-300">
+                            Send Message </button>
+                        <p id="successMsg" class="hidden text-green-600 dark:text-green-400 font-semibold mt-2"> ✅
+                            Message sent successfully! </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0b6b5f] dark:bg-gray-950 text-white pt-16 pb-8">
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- ABOUT -->
+            <div>
+                <h3 class="text-xl font-bold dark:text-yellow-400 mb-4">Aman Kumar</h3>
+                <p class="text-gray-200 leading-relaxed">
+                    Web Designer & Frontend Developer focused on creating
+                    modern, responsive and user-friendly websites.
+                </p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="md:text-center">
+                <h3 class="text-xl font-bold dark:text-yellow-400 mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-gray-200">
+                    <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                    <li><a href="skills.html" class="hover:text-yellow-400">Skills</a></li>
+                    <li><a href="services.html" class="hover:text-yellow-400">Services</a></li>
+                    <li><a href="About.html" class="hover:text-yellow-400">About</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT & SOCIAL -->
+            <div class="md:text-right">
+                <h3 class="text-xl font-bold dark:text-yellow-400 mb-4">Connect With Me</h3>
+
+                <p class="text-gray-200 mb-2">📍 Himachal Pradesh & Chandigarh</p>
+                <p class="text-gray-200 mb-2">📞 +91 8894435516</p>
+                <p class="text-gray-200 mb-4">📧 amankumar06052000@gmail.com</p>
+
+                <div class="flex md:justify-end gap-4 text-2xl">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        title="Visit my LinkedIn profile"
+                        class="text-white text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        title="Visit my Facebook profile"
+                        class="text-white text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="https://wa.me/918894435516" target="_blank" rel="noopener noreferrer"
+                        title="Chat with me on WhatsApp"
+                        class="text-white text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MAP -->
+<div class="px-4 md:px-6 lg:px-8">
+    <iframe class="w-full max-w-5xl mx-auto h-56 mt-12 rounded-xl border-4 border-white/20"
+            src="https://maps.google.com/maps?q=Chandigarh&t=&z=12&ie=UTF8&iwloc=&output=embed"
+             title="Map of Chandigarh"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+
+
+        <div class="text-center text-white mt-10 border-t border-white/20 pt-6">
+            © 2026 Aman Kumar. All rights reserved.
+        </div>
+
+
+    </footer>
+
+
+    <!-- SCROLL TO TOP -->
+    <button id="scrollTopBtn" class="fixed bottom-6 right-6 bg-[#0b6b5f] text-white
+     w-12 h-12 flex items-center justify-center rounded-full shadow-lg opacity-0 translate-y-20 pointer-events-none
+     transition-all duration-500 ease-out hover:shadow-[0_15px_40px_rgba(11,107,95,0.5)] hover:-translate-y-1">
+
+        Top↑
+    </button>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
