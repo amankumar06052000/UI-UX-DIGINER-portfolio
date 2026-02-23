@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://amankumar06052000.github.io/UI-UX-DIGINER-portfolio/</loc>
+    <lastmod>2026-02-23</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://amankumar06052000.github.io/UI-UX-DIGINER-portfolio/skills.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://amankumar06052000.github.io/UI-UX-DIGINER-portfolio/services.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://amankumar06052000.github.io/UI-UX-DIGINER-portfolio/About.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://amankumar06052000.github.io/UI-UX-DIGINER-portfolio/#contact</loc>
+    <lastmod>2026-02-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
