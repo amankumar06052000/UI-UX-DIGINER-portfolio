@@ -11,7 +11,7 @@
     <meta name="description"
         content="Aman UI Studio provides modern, responsive and professional website design services in India." />
     <meta name="robots" content="index, follow">
-     <!-- Google Site Verification -->
+    <!-- Google Site Verification -->
     <meta name="google-site-verification" content="_nb0nMVl_YjpmylTN7v26PmWIxumOFPovhFKgmYvjeM" />
 
     <link rel="canonical" href="https://amankumar06052000.github.io/UI-UX-DIGINER-portfolio/">
@@ -300,7 +300,7 @@ dark:from-gray-900 dark:via-gray-800 dark:to-gray-950 pb-20">
                         <p
                             class="text-xl font-bold text-gray-500 dark:text-gray-300 mt-2 group-hover:text-white transition">
                             75%</p>
-                    </div> 
+                    </div>
                     <!-- Figma -->
                     <div
                         class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
@@ -660,36 +660,109 @@ dark:from-gray-900 dark:via-gray-800 dark:to-gray-950 pb-20">
         </section>
 
 
-        <!-- CONTACT -->
-        <section id="contact" class="scroll-mt-24 py-20 bg-gray-200 dark:bg-gray-900">
-            <div class="max-w-7xl mx-auto px-4">
-                <h2 class="text-4xl font-extrabold text-[#0b6b5f] text-center dark:text-yellow-400 mb-14"> Contact Us
+        <section id="contact" class="scroll-mt-24 py-20 bg-gray-100 dark:bg-gray-900">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <!-- Heading -->
+                <h2 class="text-4xl font-extrabold text-center text-[#0b6b5f] dark:text-yellow-400 mb-14">
+                    Contact Us
                 </h2>
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col md:flex-row gap-10">
-                    <!-- Left Side -->
-                    <div class="md:w-1/2 space-y-4">
-                        <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📍
-                            Himachal
-                            Pradesh & (Chandigarh), India </div>
-                        <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📞 +91
-                            8894435516 </div>
-                        <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"> 📧
-                            amankumar06052000@gmail.com </div>
-                    </div> <!-- Right Side -->
-                    <div class="md:w-1/2">
-                        <form id="contactForm" class="space-y-4"> <input type="text" required
-                                class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
-                                placeholder="Your Name"> <input type="email" required
-                                class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
-                                placeholder="Your Email"> <textarea rows="4" required
-                                class="w-full p-3 rounded-lg border border-gray-300 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]"
-                                placeholder="Your Message"></textarea> <button type="submit"
-                                class="bg-[#0b6b5f] text-white px-6 py-3 rounded-full font-semibold hover:shadow-[0_15px_40px_rgba(11,107,95,0.4)] hover:-translate-y-1 transition duration-300">
-                                Send Message </button>
-                            <p id="successMsg" class="hidden text-green-600 dark:text-green-400 font-semibold mt-2"> ✅
-                                Message sent successfully! </p>
+
+                <!-- Main Box -->
+                <div class="bg-white dark:bg-gray-800 p-8 md:p-12 rounded-3xl shadow-xl 
+                grid md:grid-cols-2 gap-10 items-start">
+
+                    <!-- Left Side (Contact Info) -->
+                    <div class="space-y-6">
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl 
+                    bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
+                            <span class="text-xl">📍</span>
+                            <p>Himachal Pradesh & Chandigarh, India</p>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl 
+                    bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
+                            <span class="text-xl">📞</span>
+                            <p>+91 8894435516</p>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl 
+                    bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
+                            <span class="text-xl">📧</span>
+                            <p>amankumar06052000@gmail.com</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Side (Form) -->
+                    <div>
+                        <form id="myform" class="space-y-5">
+
+                            <!-- Phone -->
+                            <div>
+                                <label class="block font-semibold text-gray-600">Phone Number</label>
+                                <input type="text" id="phone" placeholder="Enter your phone number"
+                                    class="w-full mt-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                                <small id="phoneError" class="text-red-500 text-sm"></small>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label class="block font-semibold text-gray-600">Email</label>
+                                <input type="text" id="email" placeholder="Enter your email"
+                                    class="w-full mt-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                                <small id="emailError" class="text-red-500 text-sm"></small>
+                            </div>
+
+                            <!-- Password -->
+                            <div>
+                                <label class="flex justify-between items-center font-semibold text-gray-600">
+                                    <span>Password</span>
+
+                                    <button type="button" id="btn1" class="text-blue-600 text-sm">
+                                        Show
+                                    </button>
+                                </label>
+
+                                <input type="password" id="password" class="w-full mt-1 p-2 border rounded-lg"
+                                    placeholder="Enter your password">
+
+                                <small id="passwordError" class="text-red-500 text-sm"></small>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div>
+                                <label class="flex justify-between items-center font-semibold text-gray-600">
+                                    <span>Confirm Password</span>
+
+                                    <button type="button" id="btn2" class="text-blue-600 text-sm">
+                                        Show
+                                    </button>
+                                </label>
+
+                                <input type="password" id="confirmPassword" class="w-full mt-1 p-2 border rounded-lg"
+                                    placeholder="Confirm your password">
+
+                                <small id="confirmPasswordError" class="text-red-500 text-sm"></small>
+                            </div>
+
+
+
+
+
+                            <!-- Button -->
+                            <button type="submit" class="w-full bg-[#0b6b5f] text-white py-3 rounded-xl 
+                   hover:bg-[#094f46] transition duration-300 font-semibold">
+                                Submit
+                            </button>
+
+                            <!-- Success Message -->
+                            <p id="successMessage" class="text-green-600 text-center font-semibold"></p>
+
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
