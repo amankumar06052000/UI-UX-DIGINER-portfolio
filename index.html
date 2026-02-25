@@ -660,109 +660,123 @@ dark:from-gray-900 dark:via-gray-800 dark:to-gray-950 pb-20">
         </section>
 
 
-        <section id="contact" class="scroll-mt-24 py-20 bg-gray-100 dark:bg-gray-900">
-            <div class="max-w-7xl mx-auto px-6">
+        <section id="contact" class="scroll-mt-24 py-16 sm:py-20 bg-gray-100 dark:bg-gray-900">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
                 <!-- Heading -->
-                <h2 class="text-4xl font-extrabold text-center text-[#0b6b5f] dark:text-yellow-400 mb-14">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-center 
+               text-[#0b6b5f] dark:text-yellow-400 mb-12 sm:mb-14">
                     Contact Us
                 </h2>
 
                 <!-- Main Box -->
-                <div class="bg-white dark:bg-gray-800 p-8 md:p-12 rounded-3xl shadow-xl 
-                grid md:grid-cols-2 gap-10 items-start">
+                <div class="bg-white dark:bg-gray-800 
+                p-6 sm:p-8 md:p-12 
+                rounded-2xl sm:rounded-3xl 
+                shadow-xl 
+                grid grid-cols-1 md:grid-cols-2 
+                gap-8 sm:gap-10">
 
-                    <!-- Left Side (Contact Info) -->
-                    <div class="space-y-6">
+                    <!-- Left Side -->
+                    <div class="space-y-5">
 
-                        <div class="flex items-center gap-4 p-4 rounded-xl 
-                    bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
-                            <span class="text-xl">📍</span>
-                            <p>Himachal Pradesh & Chandigarh, India</p>
+                        <div class="flex items-start gap-3 p-4 rounded-xl 
+                    bg-gray-100 dark:bg-gray-700 
+                    text-gray-800 dark:text-white">
+                            <span class="text-xl mt-1">📍</span>
+                            <p class="text-sm sm:text-base">
+                                Himachal Pradesh & Chandigarh, India
+                            </p>
                         </div>
 
-                        <div class="flex items-center gap-4 p-4 rounded-xl 
-                    bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
-                            <span class="text-xl">📞</span>
-                            <p>+91 8894435516</p>
+                        <div class="flex items-start gap-3 p-4 rounded-xl 
+                    bg-gray-100 dark:bg-gray-700 
+                    text-gray-800 dark:text-white">
+                            <span class="text-xl mt-1">📞</span>
+                            <p class="text-sm sm:text-base">
+                                +91 8894435516
+                            </p>
                         </div>
 
-                        <div class="flex items-center gap-4 p-4 rounded-xl 
-                    bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
-                            <span class="text-xl">📧</span>
-                            <p>amankumar06052000@gmail.com</p>
+                        <div class="flex items-start gap-3 p-4 rounded-xl 
+                    bg-gray-100 dark:bg-gray-700 
+                    text-gray-800 dark:text-white break-all">
+                            <span class="text-xl mt-1">📧</span>
+                            <p class="text-sm sm:text-base">
+                                amankumar06052000@gmail.com
+                            </p>
                         </div>
 
                     </div>
 
                     <!-- Right Side (Form) -->
                     <div>
-                        <form id="myform" class="space-y-5">
+                        <form id="myform" class="space-y-6">
 
                             <!-- Phone -->
                             <div>
-                                <label class="block font-semibold text-gray-600">Phone Number</label>
-                                <input type="text" id="phone" placeholder="Enter your phone number"
-                                    class="w-full mt-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
-                                <small id="phoneError" class="text-red-500 text-sm"></small>
+                                <label class="block font-semibold text-gray-600 dark:text-gray-300 text-sm">
+                                    Phone Number
+                                </label>
+                                <input type="text" id="phone" class="w-full mt-2 px-4 py-3 rounded-xl border 
+                bg-white text-gray-800 border-gray-300
+                dark:bg-gray-700 dark:border-gray-600 dark:text-white
+                focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]" placeholder="Enter your phone number">
                             </div>
 
                             <!-- Email -->
                             <div>
-                                <label class="block font-semibold text-gray-600">Email</label>
-                                <input type="text" id="email" placeholder="Enter your email"
-                                    class="w-full mt-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
-                                <small id="emailError" class="text-red-500 text-sm"></small>
+                                <label class="block font-semibold text-gray-600 dark:text-gray-300 text-sm">
+                                    Email
+                                </label>
+                                <input type="email" id="email" class="w-full mt-2 px-4 py-3 rounded-xl border 
+                bg-white text-gray-800 border-gray-300
+                dark:bg-gray-700 dark:border-gray-600 dark:text-white
+                focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]" placeholder="Enter your email">
                             </div>
 
                             <!-- Password -->
-                            <div>
-                                <label class="flex justify-between items-center font-semibold text-gray-600">
-                                    <span>Password</span>
-
-                                    <button type="button" id="btn1" class="text-blue-600 text-sm">
-                                        Show
-                                    </button>
+                            <div class="relative">
+                                <label class="block font-semibold text-gray-600 dark:text-gray-300 text-sm">
+                                    Password
                                 </label>
 
-                                <input type="password" id="password" class="w-full mt-1 p-2 border rounded-lg"
-                                    placeholder="Enter your password">
+                                <input type="password" id="password" class="w-full mt-2 px-4 py-3 pr-16 rounded-xl border 
+                bg-white text-gray-800 border-gray-300
+                dark:bg-gray-700 dark:border-gray-600 dark:text-white
+                focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]" placeholder="Enter password">
 
-                                <small id="passwordError" class="text-red-500 text-sm"></small>
+                                <button type="button" id="togglePassword"
+                                    class="absolute right-4 top-[38px] text-sm text-blue-600 dark:text-blue-400">
+                                    Show
+                                </button>
                             </div>
 
                             <!-- Confirm Password -->
-                            <div>
-                                <label class="flex justify-between items-center font-semibold text-gray-600">
-                                    <span>Confirm Password</span>
-
-                                    <button type="button" id="btn2" class="text-blue-600 text-sm">
-                                        Show
-                                    </button>
+                            <div class="relative">
+                                <label class="block font-semibold text-gray-600 dark:text-gray-300 text-sm">
+                                    Confirm Password
                                 </label>
 
-                                <input type="password" id="confirmPassword" class="w-full mt-1 p-2 border rounded-lg"
-                                    placeholder="Confirm your password">
+                                <input type="password" id="confirmPassword" class="w-full mt-2 px-4 py-3 pr-16 rounded-xl border 
+                bg-white text-gray-800 border-gray-300
+                dark:bg-gray-700 dark:border-gray-600 dark:text-white
+                focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]" placeholder="Confirm password">
 
-                                <small id="confirmPasswordError" class="text-red-500 text-sm"></small>
+                                <button type="button" id="toggleConfirmPassword"
+                                    class="absolute right-4 top-[38px] text-sm text-blue-600 dark:text-blue-400">
+                                    Show
+                                </button>
                             </div>
 
-
-
-
-
-                            <!-- Button -->
+                            <!-- Submit -->
                             <button type="submit" class="w-full bg-[#0b6b5f] text-white py-3 rounded-xl 
-                   hover:bg-[#094f46] transition duration-300 font-semibold">
+            hover:bg-[#094f46] transition font-semibold">
                                 Submit
                             </button>
 
-                            <!-- Success Message -->
-                            <p id="successMessage" class="text-green-600 text-center font-semibold"></p>
-
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>

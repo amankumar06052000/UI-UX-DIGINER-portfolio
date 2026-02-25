@@ -74,29 +74,35 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
 
     // SHOW / HIDE PASSWORD 
-    document.getElementById("btn1").addEventListener("click", function () {
-        var input = document.getElementById("password");
 
-        if (input.type === "password") {
-            input.type = "text";
-            this.innerText = "Hide";
+    // Password Toggle
+    const password = document.getElementById("password");
+    const togglePassword = document.getElementById("togglePassword");
+
+    togglePassword.addEventListener("click", function () {
+        if (password.type === "password") {
+            password.type = "text";
+            this.textContent = "Hide";
         } else {
-            input.type = "password";
-            this.innerText = "Show";
+            password.type = "password";
+            this.textContent = "Show";
         }
     });
 
-    document.getElementById("btn2").addEventListener("click", function () {
-        var input = document.getElementById("confirmPassword");
+    // Confirm Password Toggle
+    const confirmPassword = document.getElementById("confirmPassword");
+    const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
 
-        if (input.type === "password") {
-            input.type = "text";
-            this.innerText = "Hide";
+    toggleConfirmPassword.addEventListener("click", function () {
+        if (confirmPassword.type === "password") {
+            confirmPassword.type = "text";
+            this.textContent = "Hide";
         } else {
-            input.type = "password";
-            this.innerText = "Show";
+            confirmPassword.type = "password";
+            this.textContent = "Show";
         }
     });
+
 
 
     // ===== FORM VALIDATION =====
